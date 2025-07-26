@@ -29,14 +29,13 @@ public class Main {
 class Solution {
     public void reverseArray(int arr[]) {
         // code here
-        int start = 0;
-        int end = arr.length - 1;
-        while(start < end){
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            start++;
-            end--;
+        int s = 0, e = arr.length - 1;
+        while(s<e){
+            int temp = arr[s];
+            arr[s] = arr[e];
+            arr[e] = temp;
+            s++;
+            e--;
         }
     }
 }
